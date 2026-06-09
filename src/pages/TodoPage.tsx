@@ -19,11 +19,11 @@ export default function TodoPage() {
   } = useTodos();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex flex-col items-center px-4 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-amber-50 flex flex-col items-center px-4 py-12">
       <div className="w-full max-w-lg">
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-indigo-600 tracking-tight">My Todos</h1>
+          <h1 className="text-4xl font-bold text-yellow-500 tracking-tight">My Todos</h1>
           <p className="mt-1 text-gray-400 text-sm">Stay organised, stay productive.</p>
         </div>
 

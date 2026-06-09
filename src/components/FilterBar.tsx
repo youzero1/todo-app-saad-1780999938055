@@ -22,7 +22,7 @@ export default function FilterBar({ filter, setFilter }: FilterBarProps) {
           className={clsx(
             'flex-1 py-1.5 rounded-lg text-sm font-medium transition-colors',
             filter === f.value
-              ? 'bg-white text-indigo-600 shadow-sm'
+              ? 'bg-white text-yellow-500 shadow-sm'
               : 'text-gray-400 hover:text-gray-600'
           )}
         >

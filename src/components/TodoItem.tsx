@@ -40,7 +40,7 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemP
           'flex-shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors',
           todo.completed
             ? 'bg-emerald-400 border-emerald-400 text-white'
-            : 'border-gray-300 hover:border-indigo-400'
+            : 'border-gray-300 hover:border-yellow-400'
         )}
         aria-label={todo.completed ? 'Mark incomplete' : 'Mark complete'}
       >
@@ -54,7 +54,7 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemP
           value={editValue}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEditValue(e.target.value)}
           onKeyDown={handleKeyDown}
-          className="flex-1 text-sm text-gray-700 border-b border-indigo-300 focus:outline-none bg-transparent py-0.5"
+          className="flex-1 text-sm text-gray-700 border-b border-yellow-300 focus:outline-none bg-transparent py-0.5"
         />
       ) : (
         <span
@@ -90,7 +90,7 @@ export default function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemP
           <>
             <button
               onClick={() => setEditing(true)}
-              className="p-1 rounded-lg text-gray-300 hover:text-indigo-400 hover:bg-indigo-50 transition-colors"
+              className="p-1 rounded-lg text-gray-300 hover:text-yellow-400 hover:bg-yellow-50 transition-colors"
               aria-label="Edit"
             >
               <Pencil size={15} />

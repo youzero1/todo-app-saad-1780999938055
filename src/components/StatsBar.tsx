@@ -8,7 +8,7 @@ export default function StatsBar({ activeCount, completedCount }: StatsBarProps)
   return (
     <div className="flex gap-4 mb-4 px-1">
       <span className="text-xs text-gray-400">
-        <span className="font-semibold text-indigo-500">{total}</span> total
+        <span className="font-semibold text-yellow-500">{total}</span> total
       </span>
       <span className="text-xs text-gray-400">
         <span className="font-semibold text-amber-500">{activeCount}</span> remaining
